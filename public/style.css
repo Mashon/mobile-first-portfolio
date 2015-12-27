@@ -102,9 +102,13 @@ li {
 
 .each-project {
   background-color: blue;
-  margin-bottom: 1rem;
+  border: 2px solid red;
+  margin-bottom: 2rem;
 }
 /*-------------------ABOUT ME--------------------------*/
+
+
+}
 /*-------------------FOOTER----------------------------*/
 
 
@@ -115,13 +119,7 @@ li {
 /*-------------------SKILLS----------------------------*/
 
 
-@media screen and (min-width: 768px) {
-  .all-skill-icons {
-    display: flex;
-    flex-direction:row;
-    background-color: black;
-  }
-
+@media screen and(min-width: 760px) {
   .left-icons {
     width: 50%;
   }
@@ -129,10 +127,19 @@ li {
     width: 50%;
   }
 
+  .all-skill-icons {
+    display: flex;
+    flex-direction:row;
+    background-color: black;
+  }
 
+  .four-portfolio-projects {
+    display: flex;
+    flex-direction: row;
+  }
 
-
-
-
-
+  .each-project {
+    background-color: green;
+    width: 22vw;
+    }
 }
