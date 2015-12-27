@@ -84,7 +84,9 @@ li {
 }
 
 /*-------------------FEATURED PROJECT------------------*/
-.featured-project{
+.featured-project, .four-portfolio-projects{
+  background-color:black;
+  color:white;
   display: flex;
   flex-direction: column;
   padding: 1.4rem;
@@ -93,6 +95,15 @@ li {
 }
 
 /*-------------------MORE PROJECTS---------------------*/
+
+.four-portfolio-projects {
+  background-color: gray;
+}
+
+.each-project {
+  background-color: blue;
+  margin-bottom: 1rem;
+}
 /*-------------------ABOUT ME--------------------------*/
 /*-------------------FOOTER----------------------------*/
 
