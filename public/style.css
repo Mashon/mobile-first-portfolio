@@ -157,6 +157,7 @@ li {
   flex-direction: column;
   background-color: black;
   color: white;
+  padding: 2rem 1rem 2rem 1rem;
 
 }
 
@@ -168,7 +169,6 @@ li {
 .about-content {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   align-items: center;
   justify-content: center;
 }

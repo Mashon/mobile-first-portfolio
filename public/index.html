@@ -10,16 +10,27 @@
     <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
   </head>
   <body>
   <header>
-    <nav class="top menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
+    <nav class="top-menu">
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Home</a></li>
+          <li><a href="components.html">Portfolio</a></li>
+          <li><a href="javascript.html">About</a></li>Contact</a></li>
+          </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="sass.html">Home</a></li>
+          <li><a href="components.html">Portfolio</a></li>
+          <li><a href="javascript.html">About</a></li>
+          <li><a href="mobile.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+
   </header>
 
   <div class="top-main-background">
@@ -103,5 +114,9 @@
       </ul>
     </nav>
   </footer>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
   </body>
 </html>
