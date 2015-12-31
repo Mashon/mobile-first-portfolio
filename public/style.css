@@ -2,7 +2,7 @@
 
 body {
   box-sizing: border-box;
-  background-color: gray;
+  background-color: white;
 }
 
 a {
@@ -12,11 +12,11 @@ a {
 a:hover {
   color:yellow;
 }
-
+/*
 a:visited {
 
 
-}
+}*/
 
 ul {
   padding:0;
@@ -31,7 +31,36 @@ li {
 
 /*-------------------NAME SECTION----------------------*/
 .top-main-background {
-  background-color: blue;
+  display: flex;
+  background-image: url("images/cover-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  flex-direction: column;
+  padding-left: 1rem;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+.social {
+  border-radius: 5px;
+  width: 125px;
+  padding: 6px 0 6px 0;
+  background-color: white;
+}
+
+.social a {
+  color:black;
+}
+
+.social a:hover{
+  color:gray;
+}
+
+.social a:visted {
+  color: black;
 }
 
 /*-------------------SKILLS----------------------------*/
@@ -41,7 +70,7 @@ li {
   flex-direction:column;
   justify-content: center;
   background-color: black;
-  padding: 1rem;
+  padding: 2rem 1rem 2rem 1rem;
 }
 
 .left-icons {
@@ -97,18 +126,54 @@ li {
 /*-------------------MORE PROJECTS---------------------*/
 
 .four-portfolio-projects {
-  background-color: gray;
+  background-color: white;
 }
 
 .each-project {
-  background-color: blue;
-  border: 2px solid red;
+  background-color: gray;
   margin-bottom: 2rem;
+  padding: 0.5rem;
+  -webkit-box-shadow: 9px 7px 13px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 9px 7px 13px -5px rgba(0,0,0,0.75);
+  box-shadow: 9px 7px 13px -5px rgba(0,0,0,0.75);
+
+}
+
+.each-project h5 {
+  margin: 0.4rem 0 0.4rem 0;
+}
+
+.each-project p {
+  margin: 0.4rem 0 0.4rem 0;
+}
+
+.each-project-photo {
+  width: 100%;
 }
 /*-------------------ABOUT ME--------------------------*/
 
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
 
 }
+
+.about-content img {
+  width: 100%%;
+
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /*-------------------FOOTER----------------------------*/
 
 
@@ -119,27 +184,71 @@ li {
 /*-------------------SKILLS----------------------------*/
 
 
-@media screen and(min-width: 760px) {
+@media screen and (min-width: 780px) {
   .left-icons {
     width: 50%;
   }
   .right-icons {
     width: 50%;
   }
-
   .all-skill-icons {
     display: flex;
     flex-direction:row;
     background-color: black;
   }
+}
 
+@media screen and (min-width: 768px) {
+/*<----------TOP SECTION---------->*/
+
+.top-main-background {
+  align-items:flex-start;
+  /*padding: 3rem 0 0 10rem;*/
+
+}
+
+.name-and-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 0 4rem;
+}
+
+.name-and-icons h1{
+  font-size: 3rem;
+}
+
+
+/*<----------FEATURED PROJECT---------->*/
+
+.featured-project img {
+  width: 85%;
+}
+
+/*<----------PORTFOLIO PROJECTS---------->*/
   .four-portfolio-projects {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .each-project {
-    background-color: green;
-    width: 22vw;
+    background-color: gray;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+
     }
+
+  img {
+    width: 100%;
+  }
+
+
+  .about-me-photo {
+    width: 85%;
+
+  }
+
+
 }
